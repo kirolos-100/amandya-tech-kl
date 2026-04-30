@@ -1,8 +1,8 @@
 import { Hero } from '@/components/sections/Hero';
 import { SocialProof } from '@/components/sections/SocialProof';
 import { FeaturesBento } from '@/components/sections/FeaturesBento';
-import { client } from '@/lib/sanity.client';
-import { testimonialsQuery, faqsQuery, galleryQuery, pricingQuery } from '@/lib/sanity.queries';
+/* import { client } from '@/lib/sanity.client';
+ */import { testimonialsQuery, faqsQuery, galleryQuery, pricingQuery } from '@/lib/sanity.queries';
 import dynamic from 'next/dynamic';
 
 const DashboardPreview = dynamic(() => import('@/components/sections/DashboardPreview').then(mod => mod.DashboardPreview), { ssr: true });
@@ -15,7 +15,7 @@ const BottomCTA = dynamic(() => import('@/components/sections/BottomCTA').then(m
 export const revalidate = 60; // revalidate every minute
 
 export default async function Home() {
-  const [testimonials, faqs, gallery, pricing] = await Promise.all([
+  /* const [testimonials, faqs, gallery, pricing] = await Promise.all([
     client.fetch(testimonialsQuery),
     client.fetch(faqsQuery),
     client.fetch(galleryQuery),
@@ -24,17 +24,17 @@ export default async function Home() {
 
   const timeTiers = pricing?.filter((p: { category: string }) => p.category === 'time') || [];
   const tokenTiers = pricing?.filter((p: { category: string }) => p.category === 'token') || [];
-
+ */
   return (
     <div className="flex flex-col min-h-screen">
       <Hero />
       <SocialProof />
       <FeaturesBento />
-      <DashboardPreview initialImages={gallery} />
+      <DashboardPreview initialImages={[]} />
       <AddonEcosystem />
-      <PricingSection initialTimeTiers={timeTiers} initialTokenTiers={tokenTiers} />
-      <Testimonials initialTestimonials={testimonials} />
-      <FAQSection initialFaqs={faqs} />
+      <PricingSection initialTimeTiers={[]} initialTokenTiers={[]} />
+      <Testimonials initialTestimonials={[]} />
+      <FAQSection initialFaqs={[]} />
       <BottomCTA />
     </div>
   );
