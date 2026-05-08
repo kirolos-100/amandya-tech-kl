@@ -30,7 +30,7 @@ interface TokenTier extends BaseTier {
 const TIME_TIERS: TimeTier[] = [
     {
         name: 'Lite',
-        description: 'Webcam/DSLR + Windows OS. Pas buat independent operator yang mau mulai hustle.',
+        description: 'Webcam/DSLR + Windows OS. Perfect for independent operators looking to start their hustle.',
         prices: {
             monthly: 650000,
             sixMonths: 3500000,
@@ -50,7 +50,7 @@ const TIME_TIERS: TimeTier[] = [
     },
     {
         name: 'Basic',
-        description: 'Upgrade workflow lo dengan fitur Live Mode dan Extra Print support.',
+        description: 'Upgrade your workflow with Live Mode and Extra Print support.',
         isPopular: true,
         prices: {
             monthly: 1000000,
@@ -69,7 +69,7 @@ const TIME_TIERS: TimeTier[] = [
     },
     {
         name: 'Pro',
-        description: 'Full white-label & custom experience. Bangun empire photobooth lo sekarang.',
+        description: 'Full white-label & custom experience. Build your photobooth empire now.',
         prices: {
             monthly: 1500000,
             sixMonths: 7500000,
@@ -91,7 +91,7 @@ const TIME_TIERS: TimeTier[] = [
 const TOKEN_TIERS: TokenTier[] = [
     {
         name: '300 Foto',
-        description: 'Ideal buat event kecil atau wedding party satu hari.',
+        description: 'Ideal for small events or one-day wedding parties.',
         price: 250000,
         features: [
             '300 Photo Tokens',
@@ -102,7 +102,7 @@ const TOKEN_TIERS: TokenTier[] = [
     },
     {
         name: '600 Foto',
-        description: 'Pas buat corporate event atau exhibition yang ramai.',
+        description: 'Perfect for corporate events or busy exhibitions.',
         isPopular: true,
         price: 450000,
         features: [
@@ -114,7 +114,7 @@ const TOKEN_TIERS: TokenTier[] = [
     },
     {
         name: '1000 Foto',
-        description: 'Best value buat agensi yang handle banyak event.',
+        description: 'Best value for agencies handling multiple events.',
         price: 700000,
         features: [
             '1000 Photo Tokens',
@@ -126,7 +126,7 @@ const TOKEN_TIERS: TokenTier[] = [
 ];
 
 const formatIDR = (amount: number | undefined | null) => {
-    if (amount === undefined || amount === null) return 'Hubungi Kami';
+    if (amount === undefined || amount === null) return 'Contact Us';
     return new Intl.NumberFormat('id-ID', {
         style: 'currency',
         currency: 'IDR',
@@ -149,8 +149,8 @@ export function PricingSection({
     const displayTokenTiers = initialTokenTiers.length > 0 ? initialTokenTiers : TOKEN_TIERS;
 
     const handleWhatsAppClick = (planName: string, detail: string) => {
-        const periodLabel = detail === 'monthly' ? 'Bulanan' : detail === 'sixMonths' ? '6 Bulan' : '1 Tahun';
-        const message = encodeURIComponent(`Halo Amandya Tech, saya tertarik dengan paket ${planName} (${periodLabel}). Bisa bantu info lebih lanjut?`);
+        const periodLabel = detail === 'monthly' ? 'Monthly' : detail === 'sixMonths' ? '6 Months' : '1 Year';
+        const message = encodeURIComponent(`Hello Amandya Tech, I am interested in the ${planName} package (${periodLabel}). Can you provide more information?`);
         window.open(`https://wa.me/6285669644533?text=${message}`, '_blank');
     };
 
@@ -163,7 +163,7 @@ export function PricingSection({
                 <div className="text-center mb-16 max-w-2xl mx-auto">
                     <FadeUp>
                         <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-6">
-                            Harga Jujur, Fitur Gak Ngadi-ngadi
+                            Honest Pricing, No Nonsense Features
                         </h2>
                         
                         {/* Primary Category Toggle */}
@@ -176,7 +176,7 @@ export function PricingSection({
                                         category === 'time' ? 'bg-accent text-accent-foreground shadow-lg' : 'text-foreground/50 hover:text-foreground'
                                     )}
                                 >
-                                    Berdasarkan Waktu
+                                    Time Based
                                 </button>
                                 <button
                                     onClick={() => setCategory('token')}
@@ -185,7 +185,7 @@ export function PricingSection({
                                         category === 'token' ? 'bg-accent text-accent-foreground shadow-lg' : 'text-foreground/50 hover:text-foreground'
                                     )}
                                 >
-                                    Sistem Token
+                                    Token System
                                 </button>
                             </div>
                         </div>
@@ -200,7 +200,7 @@ export function PricingSection({
                                         period === 'monthly' ? 'bg-background text-foreground shadow-sm' : 'text-foreground/40 hover:text-foreground'
                                     )}
                                 >
-                                    Per Bulan
+                                    Monthly
                                 </button>
                                 <button
                                     onClick={() => setPeriod('yearly')}
@@ -209,7 +209,7 @@ export function PricingSection({
                                         period === 'yearly' ? 'bg-accent text-accent-foreground' : 'text-foreground/50 hover:text-foreground'
                                     )}
                                 >
-                                    1 Tahun
+                                    1 Year
                                     <span className="text-[10px] bg-foreground/10 px-1.5 py-0.5 rounded-full">Save More</span>
                                 </button>
                                 <button
@@ -219,7 +219,7 @@ export function PricingSection({
                                         period === 'sixMonths' ? 'bg-background text-foreground shadow-sm' : 'text-foreground/50 hover:text-foreground'
                                     )}
                                 >
-                                    6 Bulan
+                                    6 Months
                                 </button>
                             </div>
                         )}
@@ -262,8 +262,8 @@ export function PricingSection({
                                     {(isTimeTier ? (tier as TimeTier).prices?.[period] : (tier as TokenTier).price) !== undefined && (
                                         <span className="text-foreground/40 text-sm ml-1">
                                             /{category === 'time' 
-                                                ? (period === 'monthly' ? 'bulan' : period === 'sixMonths' ? '6bulan' : 'tahun')
-                                                : 'paket'}
+                                                ? (period === 'monthly' ? 'month' : period === 'sixMonths' ? '6months' : 'year')
+                                                : 'package'}
                                         </span>
                                     )}
                                 </div>
@@ -278,11 +278,11 @@ export function PricingSection({
                                     )}
                                 >
                                     <MessageCircle className="w-4 h-4 mr-2" />
-                                    Pesan Sekarang
+                                    Order Now
                                 </Button>
 
                                 <div className="space-y-4">
-                                    <p className="text-xs font-bold text-foreground/30 uppercase tracking-widest">Fitur Utama</p>
+                                    <p className="text-xs font-bold text-foreground/30 uppercase tracking-widest">Core Features</p>
                                     <ul className="space-y-3">
                                         {tier.features?.map((feature, idx) => (
                                             <li key={`${tier.name}-feature-${idx}`} className="flex items-start gap-3">

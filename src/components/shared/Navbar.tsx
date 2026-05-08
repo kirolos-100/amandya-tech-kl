@@ -10,9 +10,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ThemeToggle } from './ThemeToggle';
 
 const NAV_LINKS = [
-    { href: '#features', label: 'Fitur Kece' },
-    { href: '#how-it-works', label: 'Cara Kerja' },
-    { href: '#pricing', label: 'Harga & Paket' },
+    { href: '#features', label: 'Features' },
+    { href: '#how-it-works', label: 'How It Works' },
+    { href: '#pricing', label: 'Pricing & Plans' },
 ];
 
 const SOCIAL_LINKS = [
@@ -193,7 +193,7 @@ export function Navbar() {
                             <div className="flex-1 flex flex-col justify-center space-y-12">
                                 <div className="space-y-4">
                                     <motion.p variants={itemVariants} className="text-[10px] font-bold text-accent uppercase tracking-[0.2em] opacity-50">
-                                        Menu Navigasi
+                                        Navigation Menu
                                     </motion.p>
                                     
                                     <div className="flex flex-col gap-4 xs:gap-6">
@@ -218,7 +218,7 @@ export function Navbar() {
                                             variant="default"
                                             className="w-full h-14 xs:h-16 text-lg bg-accent hover:bg-accent/90 text-accent-foreground rounded-2xl font-bold shadow-2xl shadow-accent/20 transition-transform active:scale-95"
                                         >
-                                            Mulai Sekarang
+                                            Get Started
                                         </Button>
                                     </Link>
                                 </motion.div>
@@ -242,7 +242,7 @@ export function Navbar() {
                                         ))}
                                     </div>
                                     <div>
-                                        <p className="text-[10px] font-bold text-foreground/30 uppercase tracking-widest mb-1">Butuh Bantuan?</p>
+                                        <p className="text-[10px] font-bold text-foreground/30 uppercase tracking-widest mb-1">Need Help?</p>
                                         <a href="mailto:info@amandya.tech" className="text-foreground/80 text-base font-medium hover:text-accent transition-colors">
                                             info@amandya.tech
                                         </a>
@@ -250,7 +250,7 @@ export function Navbar() {
                                 </div>
                                 
                                 <p className="text-center text-foreground/20 text-[10px]">
-                                    © 2026 Amandya Tech. Dibuat dengan 🔥 untuk Operator Photobooth.
+                                    © 2026 Amandya Tech. Built with 🔥 for Photobooth Operators.
                                 </p>
                             </motion.div>
                         </motion.div>

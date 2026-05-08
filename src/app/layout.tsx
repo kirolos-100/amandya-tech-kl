@@ -27,21 +27,21 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
   title: "Amandya Tech | Smart Interactive Photobooth Software System",
-  description: "Revolusi bisnis photobooth lo dengan software interaktif Amandya Tech. Dilengkapi fitur Live Mode, Dual Camera, otomatis form consent, dan management dashboard cloud terpusat.",
-  keywords: ["Software photobooth Indonesia", "Photobooth Software", "Amandya Tech", "Live Gallery Photobooth", "Automasi Photobooth", "Digital Consent"],
+  description: "Revolutionize your photobooth business with Amandya Tech's interactive software. Featuring Live Mode, Dual Camera, automated consent forms, and a centralized cloud management dashboard.",
+  keywords: ["Photobooth Software", "Interactive Photobooth", "Amandya Tech", "Live Gallery Photobooth", "Photobooth Automation", "Digital Consent"],
   openGraph: {
     type: "website",
-    locale: "id_ID",
+    locale: "en_US",
     url: "https://amandya.tech",
     siteName: "Amandya Tech",
     title: "Amandya Tech | Next-Gen Photobooth Software",
-    description: "Sistem photobooth all-in-one paling fleksibel buat operator zaman now.",
-    images: [{ url: "/og-image.jpg" }] // assuming there will be an og-image later
+    description: "The most flexible all-in-one photobooth system for modern operators.",
+    images: [{ url: "/og-image.jpg" }]
   },
   twitter: {
     card: "summary_large_image",
     title: "Amandya Tech | Next-Gen Photobooth Software",
-    description: "Sistem photobooth all-in-one paling mulus buat operator zaman now.",
+    description: "The most seamless all-in-one photobooth system for modern operators.",
   },
   manifest: "/site.webmanifest",
 };
@@ -55,6 +55,7 @@ export default function RootLayout({
     <html lang="en" className={cn("font-sans", geist.variable)} suppressHydrationWarning>
       <body
         className={`${jakarta.variable} ${inter.variable} ${jetbrains.variable} font-sans antialiased`}
+        suppressHydrationWarning
       >
         <ThemeProvider
           attribute="class"

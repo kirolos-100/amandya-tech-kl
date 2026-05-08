@@ -8,7 +8,7 @@ export function SocialProof() {
             <div className="container mx-auto px-4 text-center">
                 <FadeUp>
                     <p className="text-sm font-medium text-foreground/40 mb-10 uppercase tracking-widest">
-                        Dipercaya oleh para kreator photobooth paling inovatif di Indonesia 🌍
+                        Trusted by the most innovative photobooth creators worldwide 🌍
                     </p>
 
                     <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all duration-500 text-foreground">

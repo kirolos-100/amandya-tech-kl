@@ -16,24 +16,24 @@ export interface FAQItem {
 
 const STATIC_FAQS: FAQItem[] = [
     {
-        question: 'Bisa jalan tanpa internet gak nih?',
-        answer: 'Bisa dong! Amandya Tech punya offline mode yang super tangguh. Tamu tetep bisa foto, ttd consent, dan masukin data. Semuanya bakal otomatis nge-sync ke cloud dan ngirim email pas udah dapet Wi-Fi lagi.',
+        question: 'Can it run without internet?',
+        answer: 'Absolutely! Amandya Tech has a super resilient offline mode. Guests can still take photos, sign consents, and enter data. Everything will automatically sync to the cloud and send emails once Wi-Fi is restored.',
     },
     {
-        question: 'Bisa pake DSLR sama Webcam barengan di satu event?',
-        answer: 'Bisa banget. Arsitektur dual-camera kita mungkinkan lo colok DSLR buat hasil foto mantap dan webcam biasa buat jepret GIF/Boomerang seketika. Software otomatis nge-switch kameranya mulus banget sesuai template yang tamu pilih.',
+        question: 'Can I use both a DSLR and a Webcam at the same event?',
+        answer: 'Definitely. Our dual-camera architecture allows you to plug in a DSLR for stunning photos and a webcam for instant GIFs/Boomerangs. The software automatically switches cameras smoothly based on the template chosen by the guest.',
     },
     {
-        question: 'Ada limit berapa banyak event yang bisa jalan barengan?',
-        answer: 'Gak ada limit event! Harga langganan kita berdasarkan jumlah device aktif. Kalo lo pake plan Pro (3 device), lo bisa jalanin 3 event beda secara bersamaan, atau pasang 3 booth sekaligus di satu event raksasa.',
+        question: 'Is there a limit to how many events can run simultaneously?',
+        answer: 'No event limits! Our subscription is based on the number of active devices. If you use the Pro plan (3 devices), you can run 3 different events simultaneously or set up 3 booths at one massive event.',
     },
     {
-        question: 'Gimana sih cara kerja add-on Consent App?',
-        answer: 'Consent App itu interface terpisah yang bisa lo buka di iPad, ditaruh agak jauh dari booth utama. Habis tamu foto, hasilnya muncul di iPad itu biar mereka bisa review secara private, ttd waiver marketing/liabilitas lo, terus masukin email buat dapetin copy digitalnya.',
+        question: 'How does the Consent App add-on work?',
+        answer: 'The Consent App is a separate interface that you can open on an iPad, placed slightly away from the main booth. After guests take a photo, it appears on the iPad for them to privately review, sign marketing/liability waivers, and enter their email to receive a digital copy.',
     },
     {
-        question: 'Klien gue dapet link live gallery gak?',
-        answer: 'Pasti dapet! Tiap event otomatis nge-generate live gallery keren yang udah dioptimasi buat mobile. Kalo lo langganan plan Pro atau Enterprise, gallery ini full white-label pake branding dan custom domain lo sendiri.',
+        question: 'Do my clients get a live gallery link?',
+        answer: 'Always! Every event automatically generates an optimized mobile live gallery. If you are on the Pro or Enterprise plan, this gallery is fully white-labeled with your own branding and custom domain.',
     },
 ];
 
@@ -48,10 +48,10 @@ export function FAQSection({ initialFaqs = [] }: { initialFaqs?: FAQItem[] }) {
             <div className="container mx-auto px-4 max-w-4xl">
                 <FadeUp className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-6">
-                        Yang Sering <span className="text-accent">Ditanyain (FAQ)</span>
+                        Frequently Asked <span className="text-accent">Questions (FAQ)</span>
                     </h2>
                     <p className="text-lg text-foreground/60">
-                        Ada pertanyaan? Kita punya jawabannya. Butuh bantuan lebih? Tim support kita standby 24/7.
+                        Have questions? We have the answers. Need more help? Our support team is on standby 24/7.
                     </p>
                 </FadeUp>
 

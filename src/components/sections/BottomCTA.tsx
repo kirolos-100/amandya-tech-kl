@@ -20,18 +20,18 @@ export function BottomCTA() {
                 <FadeUp>
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-foreground/3 mb-8 shadow-sm">
                         <Zap className="w-4 h-4 text-accent" />
-                        <span className="text-sm font-medium text-foreground/80">Udah Siap Level Up?</span>
+                        <span className="text-sm font-medium text-foreground/80">Ready to Level Up?</span>
                     </div>
 
                     <h2 className="text-4xl md:text-7xl font-heading font-black text-foreground mb-8 tracking-tight max-w-4xl mx-auto">
-                        Bangun Photobooth <br className="hidden md:block" />
+                        Build Your Photobooth <br className="hidden md:block" />
                         <span className="text-transparent bg-clip-text bg-linear-to-r from-accent via-blue-400 to-purple-500">
-                            Empire Lo Sekarang
+                            Empire Today
                         </span>
                     </h2>
 
                     <p className="text-xl text-foreground/60 mb-12 max-w-2xl mx-auto leading-relaxed">
-                        Join ribuan operator sukses yang udah otomatisin workflow dan boost revenue mereka bareng Amandya Tech.
+                        Join thousands of successful operators who have automated their workflows and boosted their revenue with Amandya Tech.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -40,11 +40,11 @@ export function BottomCTA() {
                                 size="lg"
                                 className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-10 h-14 text-lg font-bold shadow-xl dark:shadow-primary/20 transition-all hover:scale-105"
                             >
-                                Gas, Bangun Empire Lo!
+                                Start Building Now
                             </Button>
                         </Link>
                         <Link 
-                            href="https://wa.me/6285669644533?text=Halo%20Amandya%20Tech,%20saya%20mau%20konsultasi%20gratis%20dong%20buat%20mulai%20bisnis%20photobooth!" 
+                            href="https://wa.me/6285669644533?text=Hello%20Amandya%20Tech,%20I%20would%20like%20a%20free%20consultation%20to%20start%20my%20photobooth%20business!" 
                             target="_blank"
                             className="w-full sm:w-auto"
                         >
@@ -54,13 +54,13 @@ export function BottomCTA() {
                                 className="w-full rounded-full px-8 h-14 text-lg glass border-border hover:bg-foreground/5 text-foreground"
                             >
                                 <MessageCircle className="mr-2 w-5 h-5 text-emerald-500" />
-                                Konsul Gratis Yuk
+                                Free Consultation
                             </Button>
                         </Link>
                     </div>
 
                     <p className="mt-8 text-sm text-foreground/40 italic">
-                        &ldquo;Software all-in-one paling sat-set buat operator photobooth.&rdquo;
+                        &ldquo;The most seamless all-in-one software for photobooth operators.&rdquo;
                     </p>
                 </FadeUp>
             </div>

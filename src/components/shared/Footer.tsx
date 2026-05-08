@@ -51,28 +51,28 @@ export function Footer() {
                     </div>
                     
                     <div>
-                        <h4 className="font-heading font-medium text-foreground mb-4">Produk</h4>
+                        <h4 className="font-heading font-medium text-foreground mb-4">Product</h4>
                         <ul className="space-y-3 text-sm text-foreground/60">
                             <li>
                                 <Link href="#features" className="hover:text-accent transition-colors">
-                                    Fitur
+                                    Features
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#pricing" className="hover:text-accent transition-colors">
-                                    Paket Harga
+                                    Pricing
                                 </Link>
                             </li>
                             <li>
                                 <Link href="#faq" className="hover:text-accent transition-colors">
-                                    Dokumentasi
+                                    Documentation
                                 </Link>
                             </li>
                         </ul>
                     </div>
                     
                     <div>
-                        <h4 className="font-heading font-medium text-foreground mb-4">Hubungi Kami</h4>
+                        <h4 className="font-heading font-medium text-foreground mb-4">Contact Us</h4>
                         <div className="flex flex-col gap-3">
                             <Link 
                                 href="https://wa.me/6285669644533" 
@@ -97,8 +97,8 @@ export function Footer() {
                 <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between text-[10px] text-foreground/30 uppercase tracking-widest">
                     <p>&copy; {currentYear} Amandya Tech. All rights reserved.</p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
-                        <Link href="/privacy" className="hover:text-foreground transition-colors">Privasi</Link>
-                        <Link href="/terms" className="hover:text-foreground transition-colors">Syarat & Ketentuan</Link>
+                        <Link href="/privacy" className="hover:text-foreground transition-colors">Privacy</Link>
+                        <Link href="/terms" className="hover:text-foreground transition-colors">Terms & Conditions</Link>
                     </div>
                 </div>
             </div>

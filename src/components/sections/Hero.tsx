@@ -23,19 +23,19 @@ export function Hero() {
                     <FadeUp delay={0.1} yOffset={20}>
                         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-border glass mb-8 animate-pulse-slow">
                             <Sparkles className="w-4 h-4 text-accent" />
-                            <span className="text-sm font-medium text-foreground/80">Amandya Tech V1.1 Udah Launching 🎉</span>
+                            <span className="text-sm font-medium text-foreground/80">Amandya Tech V1.1 Is Now Live 🎉</span>
                         </div>
                     </FadeUp>
 
                     <HeroTypography
-                        text="Level Up Bisnis Photobooth Lo Pakai Smart Automation 🚀"
+                        text="Level Up Your Photobooth Business With Smart Automation 🚀"
                         highlightedWord="Smart Automation"
                     />
 
                     {/* Subheadline */}
                     <FadeUp delay={0.3}>
                         <p className="text-lg md:text-xl text-foreground/60 mb-10 max-w-2xl mx-auto leading-relaxed">
-                            Ekosistem software all-in-one yang di-desain khusus buat operator photobooth zaman now. Nikmatin seamless workflow dengan Live Gallery, Dual Camera, dan Digital Consent yang otomatis jalan sendiri.
+                            An all-in-one software ecosystem designed specifically for modern photobooth operators. Experience a seamless workflow with Live Gallery, Dual Camera, and automated Digital Consent.
                         </p>
                     </FadeUp>
 
@@ -46,7 +46,7 @@ export function Hero() {
                                 size="lg"
                                 className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 h-12 text-base shadow-xl dark:shadow-primary/20"
                             >
-                                Mulai Level Up Sekarang
+                                Level Up Now
                             </Button>
                         </Link>
                         <Link href="#features" className="w-full sm:w-auto">
@@ -55,7 +55,7 @@ export function Hero() {
                                 variant="outline"
                                 className="w-full rounded-full px-8 h-12 text-base glass border-border hover:bg-foreground/5 text-foreground"
                             >
-                                Lihat Fitur Kece
+                                Explore Features
                                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                             </Button>
                         </Link>

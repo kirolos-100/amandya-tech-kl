@@ -16,16 +16,27 @@ export interface GalleryImage {
 const TABS = [
     { id: 'gallery', label: 'Live Gallery', icon: <ImageIcon className="w-4 h-4" /> },
     { id: 'devices', label: 'Device Manager', icon: <Smartphone className="w-4 h-4" /> },
-    { id: 'analytics', label: 'Analitik Real-time', icon: <LayoutDashboard className="w-4 h-4" /> },
+    { id: 'analytics', label: 'Real-time Analytics', icon: <LayoutDashboard className="w-4 h-4" /> },
 ];
 
 export function DashboardPreview({ initialImages = [] }: { initialImages?: GalleryImage[] }) {
     const [activeTab, setActiveTab] = useState(TABS[0].id);
 
-    const displayImages = initialImages.length > 0 ? initialImages : [...Array(8)].map((_, i) => ({
+    const fallbackImages = [
+        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1531297172867-4b4488615b13?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80"
+    ];
+
+    const displayImages = initialImages.length > 0 ? initialImages : fallbackImages.map((img, i) => ({
         _id: `skeleton-${i}`,
-        image: null,
-        filename: `IMG_890${i + 1}.JPG`
+        image: img,
+        filename: `SCAN_${890 + i + 1}.DAT`
     }));
 
     return (
@@ -34,10 +45,10 @@ export function DashboardPreview({ initialImages = [] }: { initialImages?: Galle
                 <div className="text-center mb-16 max-w-3xl mx-auto">
                     <FadeUp>
                         <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-6">
-                            Pantau Semua Booth Lo <span className="text-accent text-gradient">dari Mana Aja</span>
+                            Monitor All Your Booths <span className="text-accent text-gradient">from Anywhere</span>
                         </h2>
                         <p className="text-lg text-foreground/60">
-                            Pantau banyak titik photobooth sekaligus. Update template, cek hardware status, sampe buka Live Gallery, semuanya serba instan dari satu Cloud Dashboard.
+                            Monitor multiple photobooth locations simultaneously. Update templates, check hardware status, and access the Live Gallery—everything instantly from one Cloud Dashboard.
                         </p>
                     </FadeUp>
                 </div>
@@ -139,7 +150,7 @@ export function DashboardPreview({ initialImages = [] }: { initialImages?: Galle
                                                     </div>
                                                 </div>
                                                 <div className="text-right hidden sm:block">
-                                                    <div className="text-sm text-foreground/80">Baterai</div>
+                                                    <div className="text-sm text-foreground/80">Battery</div>
                                                     <div className="text-xs text-foreground/50">{device.battery}</div>
                                                 </div>
                                             </div>
@@ -158,19 +169,19 @@ export function DashboardPreview({ initialImages = [] }: { initialImages?: Galle
                                         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
                                     >
                                         <div className="p-6 rounded-xl bg-foreground/5 border border-border">
-                                            <div className="text-sm text-foreground/60 mb-2">Total Jepretan Hari Ini</div>
+                                            <div className="text-sm text-foreground/60 mb-2">Total Shots Today</div>
                                             <div className="text-4xl font-bold text-foreground mb-2">1,284</div>
-                                            <div className="text-xs text-emerald-500 flex items-center gap-1">+12% vs kemarin</div>
+                                            <div className="text-xs text-emerald-500 flex items-center gap-1">+12% vs yesterday</div>
                                         </div>
                                         <div className="p-6 rounded-xl bg-foreground/5 border border-border">
-                                            <div className="text-sm text-foreground/60 mb-2">Email yg Terkumpul</div>
+                                            <div className="text-sm text-foreground/60 mb-2">Collected Emails</div>
                                             <div className="text-4xl font-bold text-foreground mb-2">842</div>
-                                            <div className="text-xs text-emerald-500 flex items-center gap-1">+5% vs kemarin</div>
+                                            <div className="text-xs text-emerald-500 flex items-center gap-1">+5% vs yesterday</div>
                                         </div>
                                         <div className="p-6 rounded-xl bg-foreground/5 border border-border sm:col-span-2 md:col-span-1">
-                                            <div className="text-sm text-foreground/60 mb-2">Event Aktif</div>
+                                            <div className="text-sm text-foreground/60 mb-2">Active Events</div>
                                             <div className="text-4xl font-bold text-foreground mb-2">3</div>
-                                            <div className="text-xs text-foreground/40 flex items-center gap-1">Di 2 kota berbeda</div>
+                                            <div className="text-xs text-foreground/40 flex items-center gap-1">In 2 different cities</div>
                                         </div>
                                         <div className="col-span-1 sm:col-span-2 md:col-span-3 h-48 rounded-xl bg-foreground/5 border border-border flex items-end gap-2 p-6">
                                             {/* Fake bar chart */}

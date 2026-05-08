@@ -18,25 +18,25 @@ const STATIC_TESTIMONIALS: Testimonial[] = [
     {
         name: "Sarah Jenkins",
         role: "Owner, Snap&Smile Events",
-        content: "Semenjak pindah ke Amandya Tech bulan lalu, bener-bener jadi game changer. Fitur dual kameranya doang udah hemat ribuan dolar buat beli iPad ekstra.",
+        content: "Since switching to Amandya Tech last month, it's been an absolute game changer. The dual camera feature alone has saved us thousands of dollars on buying extra iPads.",
         rating: 5,
     },
     {
         name: "Marcus Chen",
         role: "Director, Luxe Booths",
-        content: "Offline mode-nya penyelamat banget. Pernah nge-job wedding di tempat antah berantah no sinyal, dan semuanya nge-sync mulus pas dapet Wi-Fi.",
+        content: "The offline mode is a true lifesaver. We once had a wedding job in the middle of nowhere with no signal, and everything synced seamlessly once we got Wi-Fi.",
         rating: 5,
     },
     {
         name: "Elena Rodriguez",
         role: "Event Coordinator",
-        content: "Klien pada suka banget sama fitur share WA instan. Kumpul consent secara digital juga bikin proses legalitas kita jauh lebih sat-set.",
+        content: "Clients absolutely love the instant sharing feature. Collecting consent digitally also makes our legal process so much faster.",
         rating: 5,
     },
     {
         name: "David Kim",
         role: "Founder, DK Photography",
-        content: "Berkat editor template live, gue gak perlu buka Photoshop lagi di lokasi. Revisi typo atau ganti overlay gampang banget lewat hape doang.",
+        content: "Thanks to the live template editor, I no longer need to open Photoshop on location. Fixing typos or swapping overlays is super easy right from my phone.",
         rating: 4,
     },
 ];
@@ -49,7 +49,7 @@ export function Testimonials({ initialTestimonials = [] }: { initialTestimonials
             <div className="container mx-auto px-4 mb-16 text-center">
                 <FadeUp>
                     <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-6">
-                        Pilihan Utama <span className="text-accent">Kreator Indonesia 🖤</span>
+                        The Top Choice for <span className="text-accent">Creators Worldwide 🖤</span>
                     </h2>
                 </FadeUp>
             </div>

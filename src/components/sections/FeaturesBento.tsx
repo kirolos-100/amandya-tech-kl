@@ -51,10 +51,10 @@ export function FeaturesBento() {
             <div className="container mx-auto px-4">
                 <FadeUp className="text-center mb-16 max-w-3xl mx-auto">
                     <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-6">
-                        Semua yang Lo Butuhin di <span className="text-accent">Satu Sistem Pintar</span>
+                        Everything You Need in <span className="text-accent">One Smart System</span>
                     </h2>
                     <p className="text-lg text-foreground/60">
-                        Tinggalin subscription mahal & software jadul yang ribet. Amandya Tech gabungin semua workflow lo ke satu ekosistem yang effortless.
+                        Leave behind expensive subscriptions & clunky outdated software. Amandya Tech merges your entire workflow into one effortless ecosystem.
                     </p>
                 </FadeUp>
 
@@ -63,7 +63,7 @@ export function FeaturesBento() {
                     <FadeUp delay={0.1} className="md:col-span-2 ">
                         <BentoCard
                             title="Cam Shutter & Dual Mode"
-                            description="Satu software buat semua kebutuhan. Switch instan antara DSLR untuk hasil studio-quality, atau Webcam untuk wide-angle & video seru-seruan tanpa restart aplikasi."
+                            description="One software for every need. Switch instantly between DSLR for studio-quality results, or Webcam for wide-angle & fun videos without restarting the application."
                             icon={<Camera className="w-6 h-6" />}
                             className="h-full flex flex-col"
                         >
@@ -92,8 +92,8 @@ export function FeaturesBento() {
                     {/* Card: Payment System */}
                     <FadeUp delay={0.2}>
                         <BentoCard
-                            title="Payment System Sat-Set"
-                            description="Sat-set pake QRIS atau cash. Pantau cuan lo real-time, laporannya udah otomatis rapi gak pake ribet."
+                            title="Lightning-Fast Payments"
+                            description="Fast payments using QR code or cash. Track your revenue in real-time, with reports that are automatically organized without the hassle."
                             icon={<CreditCard className="w-6 h-6" />}
                             className="h-full"
                         >
@@ -113,7 +113,7 @@ export function FeaturesBento() {
                     <FadeUp delay={0.3}>
                         <BentoCard
                             title="Real-time Cloud Sync"
-                            description="Gak perlu fomo takut file ilang. Tiap jepretan langsung auto-sync ke cloud. Gallery tamu lo bakal update instan, no delay!"
+                            description="No need to worry about losing files. Every shot auto-syncs to the cloud. Your guest gallery updates instantly, with no delays!"
                             icon={<RefreshCw className="w-6 h-6" />}
                             className="h-full"
                         />
@@ -123,7 +123,7 @@ export function FeaturesBento() {
                     <FadeUp delay={0.4} className="md:col-span-2">
                         <BentoCard
                             title="Full Visual Branding"
-                            description="Lo bebas custom vibes-nya! Dari UI screen, tombol, sampe frame fotonya bisa disesuaiin sama tema event klien. Branding lo jadi makin stand out."
+                            description="You are free to customize the vibe! From UI screens to buttons to photo frames, match everything to your client's event theme. Make your branding stand out."
                             icon={<Layout className="w-6 h-6" />}
                             className="h-full"
                         />
@@ -133,7 +133,7 @@ export function FeaturesBento() {
                     <FadeUp delay={0.5} className="md:col-span-2">
                         <BentoCard
                             title="Business Intelligence & Dashboard"
-                            description="Kepoin tren bisnis lo di sini. Liat frame mana yang paling hype, jam rame event, sampe data customer buat narik mereka balik lagi."
+                            description="Track your business trends here. See which frames are the most hyped, your busiest event hours, and customer data to keep them coming back."
                             icon={<BarChart3 className="w-6 h-6" />}
                             className="h-full"
                         >
@@ -155,7 +155,7 @@ export function FeaturesBento() {
                     <FadeUp delay={0.6}>
                         <BentoCard
                             title="Auto Update System"
-                            description="Gak perlu repot update manual. Software lo bakal dapet fitur baru secara otomatis. One-click magic, sat-sat-set! ✨"
+                            description="No need to bother with manual updates. Your software receives new features automatically. One-click magic, fast and simple! ✨"
                             icon={<Zap className="w-6 h-6" />}
                             className="h-full"
                         />
